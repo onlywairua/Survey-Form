@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>A Simple Survey From</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  	<link rel="stylesheet" href="form.css">
+</head>
+<body>
+	<div class="main_container">
+		  <p class="form-control-static">HOW YOU BECAME A PROWESS DEVELOPER!</p>
+		<div class="container mt-4">
+			<form action="/action_page.php">
+
+				<div class="name_row">
+					<div class="form-group row">
+						<div class="col-xs-4">
+							<label for="sirName">Sir Name:</label>
+							<input type="text" class="form-control" id="sirName" name="sirName">
+						</div>
+						<div class="col-xs-4">
+							<label for="firstName">First Name:</label>
+							<input type="text" class="form-control" id="firstName" name="firstName">
+						</div>
+						<div class="col-xs-4">
+							<label for="lastName">Last Name:</label>
+							<input type="text" class="form-control" id="lastName" name="lastName">
+						</div>
+		        	</div>
+		        	
+
+		        </div>
+				<div class="form-group">
+					<label class="col-sm-2 labels" for="email">Email</label>
+					<input type="email" class="form-control" id="email" placeholder="Enter your email here" name="email">
+				</div>
+
+				<div class="form-group">
+					<label class="col-sm-2 labels" for="email">Password</label>
+					<input type="Password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+				</div>
+
+				<div class="checkbox">
+					<label><input type="checkbox" name="remember">Remember me
+					</label>
+				</div>
+				<!-- <button type="submit" class="btn btn-default">Submit</button> -->
+
+			</form>	
+	</div>
+
+	<div class="comment_container mt-4">
+			<div class="form-group">
+				<label for="comment">Please Leave a Comment:</label>
+				<textarea class="form-control" rows="4" id="comment"></textarea>
+			</div>
+	</div>
+
+	<div class="checkbox_container">
+		<p>How did you learn?</p>
+		    <div class="form-check form-check-inline">
+        		<label class="form-check-label">
+            		<input class="form-check-input" type="checkbox" value=""> W3 Schools
+        		</label>
+    	    </div>
+    		<div class="form-check form-check-inline">
+        		<label class="form-check-label">
+            		<input class="form-check-input" type="checkbox" value=""> YT Channels
+        		</label>
+   			</div>
+   			<div class="form-check form-check-inline">
+        		<label class="form-check-label">
+            		<input class="form-check-input" type="checkbox" value=""> Other Tutorials
+       			</label>
+    		</div>
+	</div>
+
+	<div class="selectList_container mt-4">
+		<div class="form-group">
+			<label for="select_one" style="margin-top: 10px;font-weight: bold;font-size: 18px;text-decoration: underline;">How Likely are you method(s) of learning?</label>
+			<select class="form-control" id="select_one">
+				<option>Highly Likely</option>
+   				<option>Most Likely</option>
+    			<option>Likely</option>
+    			<option>Not Likely</option>
+			</select>
+		</div>
+	</div>
+	
+	<div class="modal_container">
+    <!-- Trigger the modal -->
+	    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Submit</button>
+
+    <!-- Modal -->
+	    <div class="modal fade" id="myModal" role="dialog">
+	        <div class="modal-dialog">
+	            <div class="modal-content">
+	                <div class="modal-header">
+	                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+	                </div>
+	                <div class="modal-body">
+	                    <p>Some text in the modal.</p>
+	                </div>
+	                <div class="modal-footer">
+	                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
+	</div>
+	
+</body>
+</html>
